@@ -1,8 +1,12 @@
 .PHONY: setup
 setup:
-	flutter clean
-	flutter pub get
+	fvm flutter clean
+	fvm flutter pub get
 
 .PHONY: watch
 watch:
-	flutter pub run build_runner watch --delete-conflicting-outputs
+	fvm flutter pub run build_runner watch --delete-conflicting-outputs
+
+.PHONY: l10n
+l10n:
+	fvm flutter gen-l10n

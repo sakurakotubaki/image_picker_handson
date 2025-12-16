@@ -1,26 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:image_picker_handson/l10n/app_localizations.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = L10n.of(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('Start Screen'),
+        title: Text(l10n.startScreenTitle),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: .center,
           children: [
-            Text('こんにちは！\n今日は${DateTime.now()}です。',
+            Text(l10n.helloWorldOn(DateTime.now()),
             textAlign: .center,),
             ElevatedButton(
               onPressed: () {
                 
               },
-              child: const Text('開始する'),
+              child: Text(l10n.start),
             ),
           ],
         ),
