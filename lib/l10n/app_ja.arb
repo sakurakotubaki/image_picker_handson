@@ -9,5 +9,8 @@
       }
     }
   },
-  "start": "開始する"
+  "start": "開始する",
+  "imageSelectScreentTitle": "画像を選択",
+  "imageSelect": "画像を選ぶ",
+  "imageEdit": "画像を編集する"
 }

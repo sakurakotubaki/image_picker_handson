@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image_picker_handson/iamge_select_screen.dart';
 import 'package:image_picker_handson/l10n/app_localizations.dart';
 
 class StartScreen extends StatelessWidget {
@@ -20,7 +21,11 @@ class StartScreen extends StatelessWidget {
             textAlign: .center,),
             ElevatedButton(
               onPressed: () {
-                
+                Navigator.of( context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const IamgeSelectScreen(),
+                  ),
+                );
               },
               child: Text(l10n.start),
             ),
