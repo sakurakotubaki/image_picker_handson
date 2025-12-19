@@ -30,4 +30,21 @@ class L10nJa extends L10n {
 
   @override
   String get imageEdit => '画像を編集する';
+
+  @override
+  String get imageSave => '保存する';
+
+  @override
+  String get resizeLabel => 'リサイズ';
+
+  @override
+  String widthLabel(int width) {
+    return '幅: ${width}px';
+  }
+
+  @override
+  String get saveSuccess => '画像を保存しました';
+
+  @override
+  String get saveFailed => '保存に失敗しました';
 }

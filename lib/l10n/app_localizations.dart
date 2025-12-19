@@ -128,6 +128,36 @@ abstract class L10n {
   /// In ja, this message translates to:
   /// **'画像を編集する'**
   String get imageEdit;
+
+  /// No description provided for @imageSave.
+  ///
+  /// In ja, this message translates to:
+  /// **'保存する'**
+  String get imageSave;
+
+  /// No description provided for @resizeLabel.
+  ///
+  /// In ja, this message translates to:
+  /// **'リサイズ'**
+  String get resizeLabel;
+
+  /// No description provided for @widthLabel.
+  ///
+  /// In ja, this message translates to:
+  /// **'幅: {width}px'**
+  String widthLabel(int width);
+
+  /// No description provided for @saveSuccess.
+  ///
+  /// In ja, this message translates to:
+  /// **'画像を保存しました'**
+  String get saveSuccess;
+
+  /// No description provided for @saveFailed.
+  ///
+  /// In ja, this message translates to:
+  /// **'保存に失敗しました'**
+  String get saveFailed;
 }
 
 class _L10nDelegate extends LocalizationsDelegate<L10n> {
